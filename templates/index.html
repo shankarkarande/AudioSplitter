@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Splitter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        .segment {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Audio Splitter</h1>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".wav" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if segments %}
+        <h2>Segments:</h2>
+        {% for segment in segments %}
+            <div class="segment">
+                <a href="{{ url_for('download', filename=segment) }}" download>{{ segment }}</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
