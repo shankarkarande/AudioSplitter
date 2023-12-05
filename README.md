@@ -1,14 +1,15 @@
 # AudioSplitter
-Overview:
-Description:
+## Overview:
+## Description:
+
 AudioSplitter is a Python web application that allows users to upload an audio file and split it into one-minute segments. The application utilizes the Flask web framework for the backend and Pydub for audio processing. It provides a simple and user-friendly interface for uploading audio files, automatically segmenting them, and allowing users to download the individual segments.
 
 # Features:
 
-Upload an audio file in WAV format.
-Dynamically split the audio file into one-minute segments.
-Display a list of segments with download links.
-Download individual segments.
+<li> Upload an audio file in WAV format.</li>
+<li> Dynamically split the audio file into one-minute segments. </li>
+<li> Display a list of segments with download links.</li>
+<li> Download individual segments.</li>
 
 # How to Use:
 
