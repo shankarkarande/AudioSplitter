@@ -33,5 +33,5 @@ AudioSplitter is a Python web application that allows users to upload an audio f
 
 ## Author:
 
-Sainath Kolpe
-Shankar Karande
+<li> Sainath Kolpe </li>
+<li> Shankar Karande </li>
